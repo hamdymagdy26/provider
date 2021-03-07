@@ -105,7 +105,7 @@ class ProviderService implements ProviderServiceInterface
      * @param $provider
      * @return Collection
      */
-    public function transformProvider($provider): Collection
+    public function transformProvider(string $provider): Collection
     {
         return collect($this->ProviderRepositoryInterface->getContent($provider))->transform(function ($singleObject) use ($provider) {
             $transformedData = collect();

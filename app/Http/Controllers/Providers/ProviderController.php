@@ -31,6 +31,7 @@ class ProviderController extends Controller
     }
 
     /**
+     * @param ProviderRequest
      * @return mixed
      */
     public function getContent(ProviderRequest $request): JsonResponse
