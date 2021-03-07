@@ -10,8 +10,10 @@ use Storage;
 
 class ProviderService implements ProviderServiceInterface
 {
-    protected $providers = [
-        'DataProviderX' => [
+    protected $providers =
+    [
+        'DataProviderX' => 
+        [
             'parentAmount' => 'amount',
             'Currency' => 'currency',
             'parentEmail' => 'email',
@@ -19,7 +21,8 @@ class ProviderService implements ProviderServiceInterface
             'registerationDate' => 'date',
             'parentIdentification' => 'id'
         ],
-        'DataProviderY' => [
+        'DataProviderY' => 
+        [
             'balance' => 'amount',
             'currency' => 'currency',
             'email' => 'email',
