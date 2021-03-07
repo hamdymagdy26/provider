@@ -4,7 +4,6 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Abstracts\AbstractRequest;
 use App\Utility\ProviderStatus;
-use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
 /**
@@ -15,10 +14,9 @@ class ProviderRequest extends AbstractRequest
 {
     /**
      * Get the validation rules that apply to the request.
-     * @param Request $request
      * @return array
      */
-    public function rules(Request $request)
+    public function rules()
     {
         return [
             'currency' => 'sometimes|string',
